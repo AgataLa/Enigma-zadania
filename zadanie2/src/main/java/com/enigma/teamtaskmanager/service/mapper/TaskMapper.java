@@ -9,14 +9,6 @@ import org.springframework.stereotype.Component;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-//@Mapper(uses = {UserMapper.class})
-//public interface TaskMapper {
-//
-//    Task mapToTask(TaskCreateDTO taskCreateDTO);
-//
-//    TaskInfoDTO mapToTaskInfoDTO(Task task);
-//}
-
 @Component
 public class TaskMapper {
 

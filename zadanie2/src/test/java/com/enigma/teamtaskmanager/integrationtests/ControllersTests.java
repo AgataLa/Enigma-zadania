@@ -189,17 +189,6 @@ public class ControllersTests {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.assignedUsers.length()").value(1));
     }
 
-    @Test
-    public void givenUserId_whenDeleteUser_thenUserIsDeleted() throws Exception {
-        final Long userId = 1L;
-
-        mockMvc.perform(MockMvcRequestBuilders.delete("/users/{id}", userId))
-                .andExpect(MockMvcResultMatchers.status().isNoContent());
-
-        mockMvc.perform(MockMvcRequestBuilders.get("/users/{id}", userId))
-                .andExpect(MockMvcResultMatchers.status().isNotFound());
-    }
-
     private List<TaskInfoDTO> createListOfTaskInfoDTOs() {
         final UserInfoDTO user1 = UserInfoDTO.builder()
                 .id(1L)

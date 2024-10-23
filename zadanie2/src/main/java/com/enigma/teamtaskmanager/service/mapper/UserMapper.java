@@ -5,14 +5,6 @@ import com.enigma.teamtaskmanager.dto.UserCreateDTO;
 import com.enigma.teamtaskmanager.dto.UserInfoDTO;
 import org.springframework.stereotype.Component;
 
-//@Mapper
-//public interface UserMapper {
-//
-//    UserInfoDTO mapToUserInfoDTO(User user);
-//
-//    User mapToUser(UserCreateDTO userCreateDTO);
-//}
-
 @Component
 public class UserMapper {
 
